@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    student_name = os.getenv('STUDENT_NAME', 'Девопсов Олег')
+    student_name = os.getenv('STUDENT_NAME', 'Бахразов Айдар')
     return render_template('index.html', student_name=student_name)
 
 if __name__ == '__main__':
